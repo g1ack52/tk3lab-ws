@@ -1,0 +1,3 @@
+#run the docker 
+sh scripts/tk3lab-run -g ionic -v 0.2
+
