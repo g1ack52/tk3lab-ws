@@ -1,1 +1,11 @@
-source ~/tk3lab-ws/venv/bin/activate
+# workspace
+export TK3LAB_WS=/home/ggal/tk3lab-ws
+
+# Python venv
+source ${TK3LAB_WS}/venv/bin/activate
+
+# Gazebo resources in my workspace
+export GZ_SIM_RESOURCE_PATH=$GZ_SIM_RESOURCE_PATH:${TK3LAB_WS}/gazebo/models
+
+# Gazebo plugins in my workspace
+export GZ_SIM_SYSTEM_PLUGIN_PATH=$GZ_SIM_SYSTEM_PLUGIN_PATH:${TK3LAB_WS}/gazebo/plugins
